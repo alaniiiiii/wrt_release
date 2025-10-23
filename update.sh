@@ -40,9 +40,6 @@ GOLANG_BRANCH="25.x"
 THEME_SET="argon"
 LAN_ADDR="192.168.1.1"
 
-# TTYD 免登录
-# sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
-
 clone_repo() {
     if [[ ! -d $BUILD_DIR ]]; then
         echo "克隆仓库: $REPO_URL 分支: $REPO_BRANCH"
